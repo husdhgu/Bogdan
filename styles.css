@@ -43,17 +43,54 @@ select {
   font: inherit;
 }
 
+/* Navbar Styles */
+.navbar {
+  background: #ffffff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(125, 73, 11, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar__link {
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar__link:hover {
+  color: var(--primary);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1.9rem 3.6rem;
+  padding: 0.95rem 1.8rem;
   border-radius: 999px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   font-weight: 600;
-  font-size: 1.1rem;
 }
 
 .btn:hover {
@@ -251,5 +288,10 @@ button:focus {
 
   .hero__actions {
     flex-direction: column;
+  }
+
+  .navbar__links {
+    gap: 1rem;
+    flex-wrap: wrap;
   }
 }
