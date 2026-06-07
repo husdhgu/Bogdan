@@ -1,12 +1,12 @@
 /* Styles for Sweet Salt landing page */
 :root {
-  --bg: #fdf6ef;
+  --bg: #FFDBB0;
   --surface: #ffffff;
-  --text: #2a1e12;
-  --muted: #7a6a5d;
-  --primary: #c77b40;
-  --primary-dark: #9a5a2e;
-  --accent: #f4d9b8;
+  --text: #7D490B;
+  --muted: #E3AF6F;
+  --primary: #7D490B;
+  --primary-dark: #5a3408;
+  --accent: #E3AF6F;
   --radius: 24px;
 }
 
@@ -63,20 +63,20 @@ select {
 .btn--primary {
   background: var(--primary);
   color: white;
-  box-shadow: 0 14px 30px rgba(199, 123, 64, 0.18);
+  box-shadow: 0 14px 30px rgba(125, 73, 11, 0.18);
 }
 
 .btn--secondary {
   background: rgba(255, 255, 255, 0.9);
   color: var(--text);
-  border: 1px solid rgba(42, 30, 18, 0.12);
+  border: 1px solid rgba(125, 73, 11, 0.12);
 }
 
 .hero {
   min-height: 90vh;
   padding: 4rem 1rem;
   color: white;
-  background: linear-gradient(180deg, rgba(44, 20, 3, 0.9), rgba(44, 20, 3, 0.65)),
+  background: linear-gradient(180deg, rgba(125, 73, 11, 0.9), rgba(125, 73, 11, 0.65)),
     url("https://images.unsplash.com/photo-1512058564366-c9d3d5d1ad5b?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
   display: grid;
   place-items: center;
@@ -127,7 +127,7 @@ h1 {
 }
 
 .section--intro {
-  background: #fff8f1;
+  background: #E3AF6F;
 }
 
 .section__header {
@@ -145,7 +145,7 @@ h1 {
   background: var(--surface);
   border-radius: var(--radius);
   padding: 1.75rem;
-  box-shadow: 0 20px 50px rgba(45, 20, 7, 0.08);
+  box-shadow: 0 20px 50px rgba(125, 73, 11, 0.08);
 }
 
 .card h3 {
@@ -160,7 +160,7 @@ h1 {
 }
 
 .section--features {
-  background: linear-gradient(90deg, #fff8f1 60%, #faf2eb 40%);
+  background: linear-gradient(90deg, #FFDBB0 60%, #E3AF6F 40%);
 }
 
 .grid {
@@ -192,7 +192,7 @@ h1 {
   background: var(--surface);
   border-radius: var(--radius);
   padding: 2rem;
-  box-shadow: 0 20px 60px rgba(27, 14, 6, 0.08);
+  box-shadow: 0 20px 60px rgba(125, 73, 11, 0.08);
 }
 
 .form {
@@ -220,13 +220,13 @@ select {
 input:focus,
 select:focus,
 button:focus {
-  outline: 2px solid rgba(199, 123, 64, 0.35);
+  outline: 2px solid rgba(125, 73, 11, 0.35);
   outline-offset: 2px;
 }
 
 .footer {
   padding: 2rem 0;
-  background: #fff9f4;
+  background: #E3AF6F;
 }
 
 .footer__content {
@@ -235,7 +235,7 @@ button:focus {
   gap: 1rem;
   align-items: center;
   flex-wrap: wrap;
-  color: var(--muted);
+  color: var(--text);
 }
 
 @media (max-width: 860px) {
