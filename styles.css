@@ -172,6 +172,10 @@ select {
   color: #f9e6d1;
 }
 
+.section--order .eyebrow {
+  color: var(--text);
+}
+
 h1,
 h2,
 h3 {
